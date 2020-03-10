@@ -1,2 +1,4 @@
-# gatsbyjssample
-sample code
+# gatsbyjs sample code
+
+- yarn install 
+- yarn develop
