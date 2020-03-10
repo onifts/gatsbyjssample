@@ -123,6 +123,8 @@ function func2(a, b) {
 
 // 5-4. setState 
 
+/*
+
 var temp1 = {
     name:'', 
     loading:true, 
@@ -143,6 +145,7 @@ console.log( 4, {...temp1,value:123} )
 console.log( 5, {...temp1.errors,loading:false} )
 console.log( 6, {...temp1,errors:{...temp1.errors,loading:false}} )
 
+*/
 
 // 4. dic key exists 
 

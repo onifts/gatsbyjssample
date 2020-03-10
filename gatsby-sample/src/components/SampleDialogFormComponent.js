@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -6,6 +6,15 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
+
+const initStateInput = {
+        
+    inputValue : '',
+    errors : {
+        inputValue : '',
+    }
+
+} // end initStateInput
 
 const SampleDialogFormComponent = ({
 
@@ -20,14 +29,7 @@ const SampleDialogFormComponent = ({
 
 } ) => {
 
-    const [ stateInput, setStateInput ] = useState({
-        
-        inputValue : inputValue,
-        errors : {
-            inputValue : inputValue === '' ? '' : ' ',
-        }
-
-    });
+    const [ stateInput, setStateInput ] = useState(initStateInput);
 
     const handleUpdate = (event) => {
 
@@ -59,6 +61,14 @@ const SampleDialogFormComponent = ({
 
     } // emd handleUpdate
         
+    useEffect(() => {
+
+        setStateInput( { ...stateInput, inputValue : inputValue } );
+
+        setStateInput( { ...stateInput, errors : { ...stateInput.errors, inputValue : inputValue === '' ? ' ' : '' } } );
+  
+    }, [openDialogForm]); // end useEffect
+
     return (
         
         <div>
