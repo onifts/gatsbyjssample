@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-const Samplecompo = () => {
+const SampleComponent = () => {
     
     const [state, setState] = useState({ name:'', loading:true });
 
@@ -9,40 +9,38 @@ const Samplecompo = () => {
 
     useEffect(() => {
         
-        console.log('[1] first rendering ... ', name);
+        console.log('[1] first rendering ... ', state);
 
-    },[]);
+    },[]); // end useEffect
 
     useEffect(() => {
         
         if ( loading ) {
         
-            console.log('[2] after component update ... [componentDidMount]', name);
-            //setState({name:'',loading:false});
             setState( { ...state, loading : false } );
 
+            console.log('[2] after component update ... [componentDidMount]', state);
+            
         }
         else {
         
-            console.log('[4] after component update ... [componentDidUpdate]', name);
+            console.log('[4] after component update ... [componentDidUpdate]', state);
         
         } // end if 
 
         return () => {
 
-            console.log('[3] before component update ... [componentWillUpdate]', name);
+            console.log('[3] before component update ... [componentWillUpdate]', state);
 
         }; // end return 
 
-    },[name]);
+    },[name]); // end useEffect
 
     const onChangeInput = e => {
         
-        //console.log(e.target.name, e.target.value);
-        //setState({name:e.target.value,loading:false});
         setState( { ...state, [e.target.name] : e.target.value } );
 
-    };
+    }; // end onChangeInput
 
     return (
         <>
@@ -51,7 +49,7 @@ const Samplecompo = () => {
         </>
     );
 
-} // end Samplecompo
+} // end SampleComponent
 
-export default Samplecompo;
+export default SampleComponent;
 

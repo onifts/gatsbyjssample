@@ -1,10 +1,10 @@
 import React from "react"
-import Samplecompo from "../components/samplecompo"
+import SampleComponent from "../components/SampleComponent"
 
 const Test = () => {
     
     return (
-        <Samplecompo />
+        <SampleComponent />
     );
 }
 
