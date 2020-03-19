@@ -147,7 +147,7 @@ console.log( 6, {...temp1,errors:{...temp1.errors,loading:false}} )
 
 */
 
-// 4. dic key exists 
+// 4. dic key exists, json list / json array 특정 필드의 값이 일치하는 json object 추출 
 
 /*
 
@@ -169,6 +169,41 @@ data[userid][socketid] = { activeChatGroupId : activeChatGroupId };
 console.log(data);
 
 */
+
+var data = [
+
+    {id: 1, name: 'A1'},
+    {id: 1, name: 'A2'},
+    {id: 1, name: 'A3'},
+    {id: 1, name: 'A4'},
+    {id: 1, name: 'A5'},
+
+    {id: 2, name: 'B1'},
+    {id: 2, name: 'B2'},
+    {id: 2, name: 'B3'},
+    {id: 2, name: 'B4'},
+    {id: 2, name: 'B5'},
+
+    {id: 3, name: 'C1'},
+    {id: 3, name: 'C2'},
+    {id: 3, name: 'C3'},
+    {id: 3, name: 'C4'},
+    {id: 3, name: 'C5'},
+
+];
+
+var key = 'id';
+var value = 2;
+
+const func1 = (data,key,value) => {
+
+    return data.filter((object) => { return object[key] === value });
+
+} // end func1
+
+var temp = func1(data,key,value);
+
+console.log(temp);
 
 // 3. [{}]
 
