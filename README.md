@@ -17,3 +17,15 @@
 - https://github.com/onifts/reactjssample
 - Sample Code : React+Redux 
 - https://github.com/onifts/reactjssample
+
+# gatsbyjs+reduc dev file structure
+- /
+  - src
+    - actions // redux, action+action creator 
+    - components // gatsbyjs component
+    - contrainers // gatsbyjs component + redux action, status
+    - pages // gatsbyjs component
+    - reducers // redux, reducers (※Real Action Define)
+    - store // redux store, one app one store 
+
+
