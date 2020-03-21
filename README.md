@@ -22,7 +22,14 @@
 - Sample Code : React+Redux 
 - https://github.com/onifts/reactjssample
 
-# gatsbyjs+reduc dev file structure
+# ++
+
+> dev
+- middleWare (미들웨어) 
+- 비동기작업 
+- yarn add redux-logger
+
+# gatsbyjs+redux dev file structure
 - /
   - src
     - actions // redux, action+action creator 
