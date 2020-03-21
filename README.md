@@ -27,7 +27,9 @@
 > dev
 - middleWare (미들웨어) 
   - 비동기작업 
+    - yarn add redux-thunk
   - yarn add redux-logger
+- https://velopert.com/3401
 
 # gatsbyjs+redux dev file structure
 - /
