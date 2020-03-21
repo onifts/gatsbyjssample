@@ -22,8 +22,10 @@
 - https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
 - Sample Code : Counter 
 - https://github.com/onifts/reactjssample
-- Sample Code : React+Redux 
+- Sample Code : Counter - React+Redux 
 - https://github.com/onifts/reactjssample
+- Sample Code : Chat - Thunk
+- https://velopert.com/3401
 
 # +middleWare (미들웨어)(중간자)
 
