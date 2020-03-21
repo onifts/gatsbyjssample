@@ -22,13 +22,12 @@
 - Sample Code : React+Redux 
 - https://github.com/onifts/reactjssample
 
-# ++
+# +middleWare (미들웨어)(중간자)
 
 > dev
-- middleWare (미들웨어)(중간자)
-  - 비동기작업 
-    - yarn add redux-thunk
-  - yarn add redux-logger
+- yarn add redux-logger 
+- yarn add redux-thunk
+- yarn add redux-pender
 - https://velopert.com/3401
 
 # gatsbyjs+redux dev file structure
