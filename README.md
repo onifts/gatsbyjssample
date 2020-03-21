@@ -25,7 +25,7 @@
 # ++
 
 > dev
-- middleWare (미들웨어) 
+- middleWare (미들웨어)(중간자)
   - 비동기작업 
     - yarn add redux-thunk
   - yarn add redux-logger
