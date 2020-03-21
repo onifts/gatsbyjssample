@@ -1,4 +1,90 @@
 
+// 8. Promise 
+
+/*
+
+function printLater(number, fn) {
+    setTimeout(
+        function() { 
+            console.log(number,fn); 
+
+            if ( fn !== undefined ) {
+                fn(); 
+            }
+        },
+        1000
+    );
+}
+
+printLater(1, function() {
+    printLater(2, function() {
+        printLater(3, function() {
+            printLater(4);
+        })
+    })
+});
+
+*/
+
+/*
+
+function printLater(number) {
+    
+    return new Promise( ( resolve ) => {
+            
+            setTimeout( 
+                () => {
+                    console.log(number);
+                    resolve(); // promise 가 끝났음을 알림
+                },
+                1000
+            )
+        }
+
+    ); // end Promise
+
+}
+
+
+printLater(1)
+.then(() => printLater(2))
+.then(() => printLater(3))
+.then(() => printLater(4))
+
+*/
+
+/*
+
+function printLater(number) {
+    
+    return new Promise( ( resolve, reject ) => {
+            
+            setTimeout( 
+                () => {
+
+                    if(number > 3) { return reject('number is greater than 3'); } 
+
+                    console.log(number);
+                    
+                    resolve(number+1); // promise 가 끝났음을 알림
+                },
+                1000
+            )
+        }
+
+    ); // end Promise
+
+}
+
+
+printLater(1)
+.then((number) => printLater(number))
+.then((number) => printLater(number))
+.then((number) => printLater(number))
+.catch(e => console.log(e));
+
+*/
+
 // 7. String to int Array 
 
 /*
@@ -138,9 +224,12 @@ var temp1 = {
 }
 
 console.log( 1, temp1 )
-console.log( 2, {...temp1,teleno:'01021881019'} )
-console.log( 3, {...temp1,loading:false} )
-console.log( 4, {...temp1,value:123} )
+
+//console.log( 2, {...temp1,teleno:'01021881019'} )
+//console.log( 3, {...temp1,loading:false} )
+//console.log( 4, {...temp1,value:123} )
+
+console.log( 2, { ...temp1, teleno:'01021881019', loading:false, value:123 } )
 
 console.log( 5, {...temp1.errors,loading:false} )
 console.log( 6, {...temp1,errors:{...temp1.errors,loading:false}} )
@@ -169,6 +258,8 @@ data[userid][socketid] = { activeChatGroupId : activeChatGroupId };
 console.log(data);
 
 */
+
+/*
 
 var data = [
 
@@ -205,7 +296,9 @@ var temp = func1(data,key,value);
 
 console.log(temp);
 
-// 3. [{}]
+*/
+
+// 3. [{}] json list, dic
 
 /*
 
