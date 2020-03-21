@@ -1,7 +1,7 @@
 
 // Action Type 
-const INCREMENT = '@cwkim/INCREMENT' ;
-const DECREMENT = '@cwkim/DECREMENT' ;
+const INCREMENT = '@oni/INCREMENT' ;
+const DECREMENT = '@oni/DECREMENT' ;
 
 // Action Creator  
 export const increment = (param=1) => ({ type: INCREMENT, param: param }) ;
