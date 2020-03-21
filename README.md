@@ -27,8 +27,8 @@
 
 > dev
 - yarn add redux-logger 
-- yarn add redux-thunk
-- yarn add redux-pender
+- yarn add redux-thunk // Asynchronous (비동기처리)
+- yarn add redux-pender // promise status manager 
 - https://velopert.com/3401
 
 # gatsbyjs+redux dev file structure
