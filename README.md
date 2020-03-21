@@ -15,6 +15,7 @@
 
 > dev
 - yarn add redux react-redux
+- yarn add redux-actions (비추)
 - Sample Code : setting 
 - https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
 - Sample Code : Counter 
