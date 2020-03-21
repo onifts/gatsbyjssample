@@ -1,5 +1,9 @@
 # gatsbyjs sample code
 
+> dev 
+- npm install -g gatsby-cli
+- gatsby new gatsbyjssample
+
 > user 
 - yarn install 
 - yarn develop
