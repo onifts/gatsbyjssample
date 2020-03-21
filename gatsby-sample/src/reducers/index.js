@@ -1,13 +1,15 @@
 import { combineReducers } from 'redux' ;
 
-import CounterReducer from './CounterReducer' ;
 import ChatReducer from './ChatReducer' ;
+import CounterCreateReducer from './CounterCreateReducer' ;
+import CounterReducer from './CounterReducer' ;
 
 export default combineReducers({
 
-    CounterReducer,
     ChatReducer,
-
+    CounterCreateReducer,
+    CounterReducer,
+    
     // add reducer 
 
 });

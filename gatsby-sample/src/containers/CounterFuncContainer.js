@@ -4,7 +4,8 @@ import actions from '../actions';
 
 import Counter from '../components/SampleCoponents/CounterSampleComponent';
 
-const { increment, decrement } = actions.CounterAction;
+//const { increment, decrement } = actions.CounterAction;
+const { increment, decrement } = actions.CounterCreateAction;
 
 /*
 const CounterFuncContainer = ( { number, increment, decrement } ) => {
@@ -32,7 +33,8 @@ const CounterFuncContainer = ( { number, increment, decrement } ) => {
 
 const mapStateToProps = ( state ) => ({
     
-    number: state.CounterReducer.number, 
+    //number: state.CounterReducer.number, 
+    number : state.CounterCreateReducer.number, 
     
 });
 
