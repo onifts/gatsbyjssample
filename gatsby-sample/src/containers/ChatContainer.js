@@ -9,7 +9,7 @@ const { chatAddMessage, chatDelMessage, chatListMessages } = actions.ChatAction;
 const mapStateToProps = ( state ) => ({
     
     data: state.ChatReducer.messages, 
-    
+    status: state.ChatReducer.status, 
 });
 
 const mapDispatchToProps = ( dispatch ) => ({

@@ -15,7 +15,8 @@ export const decrement = createAction( DECREMENT );
 export const incrementAsync = (param) => dispatch => {
     
     setTimeout(
-        () => { dispatch(increment(param)) },
+        //() => { dispatch(increment(param)) },
+        () => { dispatch( { type:INCREMENT, payload:param } ) },
         1000
 	);
 	
@@ -24,7 +25,8 @@ export const incrementAsync = (param) => dispatch => {
 export const decrementAsync = () => dispatch => {
     
     setTimeout(
-        () => { dispatch(decrement()) },
+        //() => { dispatch(decrement()) },
+        () => { dispatch( { type:DECREMENT } ) },
         1000
 	);
 	

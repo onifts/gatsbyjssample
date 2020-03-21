@@ -1,7 +1,21 @@
 
 import actions from '../actions';
 
-const { CHAT_ADD_MESSAGE, CHAT_DEL_MESSAGE, CHAT_LIST_MESSAGES } = actions.ChatAction;
+const { 
+    
+    CHAT_ADD_MESSAGE,
+	CHAT_DEL_MESSAGE,
+	CHAT_LIST_MESSAGES,
+
+	CHAT_DEL_GROUP,
+	CHAT_LOAD_MESSAGES,
+	CHAT_PULL_MESSAGES,
+
+	GET_POST_PENDING,
+	GET_POST_SUCCESS,
+    GET_POST_FAILURE
+    
+ } = actions.ChatAction;
 
 // init data 
 const initialState = {
@@ -11,7 +25,7 @@ const initialState = {
         // {chatgroupid:0,chatid:0,username:'',regdatetime:'',message:'',ismine:'1',isnotcheck:'0',issystem:'0',photo:''}
 
     ],
-
+    status:0
 };
 
 // reducer 
@@ -40,6 +54,18 @@ const ChatReducer = ( state = initialState, action ) => {
 
             return { ...state, messages: messages.filter( row => row.chatgroupid !== chatgroupid ) };
 
+        case GET_POST_PENDING:
+            
+            return { ...state, status : 1 };
+        
+        case GET_POST_SUCCESS:
+            
+            return { ...state, status : 0, messages : action.data };
+        
+        case GET_POST_FAILURE:
+            
+            return { ...state, status : -1 };
+        
         default:
             
             return state;

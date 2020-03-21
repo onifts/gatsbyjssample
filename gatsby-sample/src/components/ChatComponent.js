@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import Paper from '@material-ui/core/Paper';
 
-const ChatComponent = ( { data, chatAddMessage, chatDelMessage, chatListMessages } ) => {
+const ChatComponent = ( { data, status, chatAddMessage, chatDelMessage, chatListMessages } ) => {
     
     const [ message, setMessage ] = useState('');
 
@@ -31,9 +31,13 @@ const ChatComponent = ( { data, chatAddMessage, chatDelMessage, chatListMessages
 
             <Paper component="form" method="post" onSubmit={(e) => {handleSendMessage(e)}}>
 
-            <input name="name" value={message} onChange={onChangeInput} />
+            <input type="text" name="name" value={message} onChange={onChangeInput} />
+            <input type="button" value="load" onClick={()=>chatListMessages( { userid:5, chatgroupid:5, chatid:0 } )} />
+
             <div>
-            {data.map((element, index) => (
+            { status == 1 && 'Loading ...' }
+            { status == -1 && 'Error!!' }
+            { data.map((element, index) => (
                 
                 <div key={index}>
                     <span>{element.no} : </span> 

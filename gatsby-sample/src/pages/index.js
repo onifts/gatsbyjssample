@@ -15,6 +15,20 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+
+    <br/>
+    <br/>
+
+    <Link to="/test">Sample Component (input)</Link><br/>
+    <Link to="/test2">Pop (input)</Link><br/>
+    <Link to="/test3">Multi Language</Link><br/>
+    <Link to="/testF">Counter : Class Component + Redux</Link><br/>
+    <Link to="/testFunc">Counter : Functional Component + Redux</Link><br/>
+    <Link to="/testFuncAsync">Counter : Functional Component + Redux + Pender</Link><br/>
+    <Link to="/test5">Chat : Functional Component + Redux + thunk + Axios</Link><br/>
+
+    <br/>
+
   </Layout>
 )
 
