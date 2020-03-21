@@ -1,7 +1,11 @@
 import { createStore, applyMiddleware } from "redux";
 
 import reducers from '../reducers';
-import loggerMiddleware from '../lib/loggerMiddleware';
+//import loggerMiddleware from '../lib/loggerMiddleware';
+import { createLogger } from 'redux-logger';
+import ReduxThunk from 'redux-thunk';
+
+const logger = createLogger();
 
 export const configureStore = () => {
 
@@ -9,6 +13,7 @@ export const configureStore = () => {
 
     //return createStore( reducers, devTools );
 
-    return createStore( reducers, applyMiddleware(loggerMiddleware) );
+    //return createStore( reducers, applyMiddleware( loggerMiddleware, ReduxThunk ) );
+    return createStore( reducers, applyMiddleware( logger, ReduxThunk ) );
     
 } // end configureStore

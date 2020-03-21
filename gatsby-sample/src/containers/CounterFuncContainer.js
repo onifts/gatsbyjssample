@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { connect } from 'react-redux';
 import actions from '../actions';
 
@@ -40,8 +40,10 @@ const mapStateToProps = ( state ) => ({
 
 //const mapDispatchToProps = {increment, decrement}
 const mapDispatchToProps = dispatch => ({
+    
     onIncrement : (param)=> dispatch(increment(param)),
-    onDecrement : ()=> dispatch(decrement())
+    onDecrement : ()=> dispatch(decrement()),
+
 });
 
 //export default connect ( mapStateToProps, mapDispatchToProps )(CounterFuncContainer); 

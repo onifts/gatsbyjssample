@@ -2,7 +2,7 @@ import { handleActions } from 'redux-actions';
 
 import actions from '../actions';
 
-const { INCREMENT, DECREMENT } = actions.CounterAction;
+const { INCREMENT, DECREMENT } = actions.CounterCreateAction;
 
 // init data 
 const initialState = {

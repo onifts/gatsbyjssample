@@ -12,6 +12,24 @@ const DECREMENT = '@oni/DECREMENT/CREATEACTION' ;
 export const increment = createAction( INCREMENT ); // param -> param
 export const decrement = createAction( DECREMENT );
 
+export const incrementAsync = (param) => dispatch => {
+    
+    setTimeout(
+        () => { dispatch(increment(param)) },
+        1000
+	);
+	
+} // end incrementAsync
+
+export const decrementAsync = () => dispatch => {
+    
+    setTimeout(
+        () => { dispatch(decrement()) },
+        1000
+	);
+	
+} // end decrementAsync
+
 export {
 	INCREMENT,
 	DECREMENT,
