@@ -12,7 +12,7 @@ const mapStateToProps = ( state ) => ({
     
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = ( dispatch ) => ({
     
     chatAddMessage : (data)=> dispatch(chatAddMessage(data)),
     chatDelMessage : (id)=> dispatch(chatDelMessage(id)),

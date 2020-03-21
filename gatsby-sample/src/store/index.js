@@ -1,5 +1,7 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+
 import reducers from '../reducers';
+import loggerMiddleware from '../lib/loggerMiddleware';
 
 export const configureStore = () => {
 
@@ -7,6 +9,6 @@ export const configureStore = () => {
 
     //return createStore( reducers, devTools );
 
-    return createStore( reducers );
+    return createStore( reducers, applyMiddleware(loggerMiddleware) );
     
 } // end configureStore
