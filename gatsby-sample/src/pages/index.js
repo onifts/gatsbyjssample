@@ -22,10 +22,10 @@ const IndexPage = () => (
     <Link to="/test">Sample Component (input)</Link><br/>
     <Link to="/test2">Pop (input)</Link><br/>
     <Link to="/test3">Multi Language</Link><br/>
-    <Link to="/testF">Counter : Class Component + Redux</Link><br/>
-    <Link to="/testFunc">Counter : Functional Component + Redux</Link><br/>
-    <Link to="/testFuncAsync">Counter : Functional Component + Redux + Pender</Link><br/>
-    <Link to="/test5">Chat : Functional Component + Redux + thunk + Axios</Link><br/>
+    <Link to="/TestF">Counter : Class Component + Redux</Link><br/>
+    <Link to="/TestFunc">Counter : Functional Component + Redux</Link><br/>
+    <Link to="/TestFuncAsync">Counter : Functional Component + Redux + Thunk</Link><br/>
+    <Link to="/test5">Chat : Functional Component + Redux + Thunk + Pender + Axios</Link><br/>
 
     <br/>
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import Paper from '@material-ui/core/Paper';
 
-const ChatComponent = ( { data, status, chatAddMessage, chatDelMessage, chatListMessages } ) => {
+const ChatComponent = ( { data, status, loading, success, error, chatAddMessage, chatDelMessage, chatListMessages } ) => {
     
     const [ message, setMessage ] = useState('');
 
@@ -23,7 +23,33 @@ const ChatComponent = ( { data, status, chatAddMessage, chatDelMessage, chatList
 
         chatAddMessage( { chatgroupid : 17, username: '', photo : '', message : temp } );
         
+        //console.log(data);
+
     } // end handleSendMessage
+
+    const handleLoadMessages = async (event) => {
+        
+        event.preventDefault();
+
+        try {
+            
+            await chatListMessages( { userid:5, chatgroupid:5, chatid:0 } );
+
+            console.log('요청이 완료 된 다음에 실행됨');
+
+        } catch(e) {
+            
+            console.log('에러가 발생!');
+
+        }
+        
+    } // end handleSendMessage
+
+    useEffect(() => {
+        
+        console.log(loading, success, error)
+        
+    }); // end useEffect
 
     return (
         <>
@@ -32,12 +58,12 @@ const ChatComponent = ( { data, status, chatAddMessage, chatDelMessage, chatList
             <Paper component="form" method="post" onSubmit={(e) => {handleSendMessage(e)}}>
 
             <input type="text" name="name" value={message} onChange={onChangeInput} />
-            <input type="button" value="load" onClick={()=>chatListMessages( { userid:5, chatgroupid:5, chatid:0 } )} />
+            <input type="button" value="load" onClick={handleLoadMessages} />
 
             <div>
-            { status == 1 && 'Loading ...' }
-            { status == -1 && 'Error!!' }
-            { data.map((element, index) => (
+            { loading && 'Loading ...' }
+            { error && 'Error!!' }
+            { success && data.map((element, index) => (
                 
                 <div key={index}>
                     <span>{element.no} : </span> 

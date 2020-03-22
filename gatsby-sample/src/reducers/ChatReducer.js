@@ -7,9 +7,9 @@ const {
 	CHAT_DEL_MESSAGE,
 	CHAT_LIST_MESSAGES,
 
-	CHAT_DEL_GROUP,
-	CHAT_LOAD_MESSAGES,
-	CHAT_PULL_MESSAGES,
+	//CHAT_DEL_GROUP,
+	//CHAT_LOAD_MESSAGES,
+	//CHAT_PULL_MESSAGES,
 
 	GET_POST_PENDING,
 	GET_POST_SUCCESS,
@@ -28,7 +28,7 @@ const initialState = {
     status:0
 };
 
-// reducer 
+// reduce 
 const ChatReducer = ( state = initialState, action ) => {
     
     let messages = state.messages;

@@ -9,7 +9,7 @@ const DECREMENT = '@oni/DECREMENT/CREATEACTION' ;
 //export const decrement = () => ({ type: DECREMENT }) ;
 
 //export const increment = createAction( INCREMENT, param => param ); 
-export const increment = createAction( INCREMENT ); // param -> param
+export const increment = createAction( INCREMENT ); // param => param
 export const decrement = createAction( DECREMENT );
 
 export const incrementAsync = (param) => dispatch => {

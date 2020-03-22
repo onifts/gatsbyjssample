@@ -8,7 +8,7 @@ const initialState = {
     number: 0
 };
 
-// reducer 
+// reduce 
 const CounterReducer = ( state = initialState, action ) => {
     
     switch( action.type ) {
