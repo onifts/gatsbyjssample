@@ -1,4 +1,75 @@
 
+
+// 10. get json array one field values list 
+
+var data = [
+
+    {id: 1, name: 'A1'},
+    {id: 1, name: 'A2'},
+    {id: 1, name: 'A3'},
+    {id: 1, name: 'A4'},
+    {id: 1, name: 'A5'},
+
+    {id: 2, name: 'B1'},
+    {id: 2, name: 'B2'},
+    {id: 2, name: 'B3'},
+    {id: 2, name: 'B4'},
+    {id: 2, name: 'B5'},
+
+    {id: 3, name: 'C1'},
+    {id: 3, name: 'C2'},
+    {id: 3, name: 'C3'},
+    {id: 3, name: 'C4'},
+    {id: 3, name: 'C5'},
+
+];
+
+console.log( data.map(row => row.id) )
+
+const key = "name"
+const value = "C3"
+var idex = -1
+
+const temp = data.find((object,index) => { 
+        
+    if( object[key] === value ) {
+        idex = index;
+        return index;
+
+    } //end if 
+    
+})
+
+console.log( temp,idex )
+
+// 9. === vs == 
+
+/*
+
+var a = 1
+var b = '1'
+var c = parseInt(b)
+
+if ( a == b ) {
+    
+    console.log( 'case1 : ', a, b, c, typeof(a), typeof(b), typeof(c) )
+
+}
+
+if ( a === b ) {
+    
+    console.log( 'case2 : ', a, b, c, typeof(a), typeof(b), typeof(c) )
+
+}
+
+if ( a === c ) {
+    
+    console.log( 'case3 : ', a, b, c, typeof(a), typeof(b), typeof(c) )
+
+}
+
+*/
+
 // 8. Promise 
 
 /*
@@ -256,6 +327,21 @@ if (!(userid in data)) {
 data[userid][socketid] = { activeChatGroupId : activeChatGroupId };
 
 console.log(data);
+
+*/
+
+/*
+
+var data = { 'a':1,'b':2,'c':3 }
+
+for( key in data ) {
+    
+    console.log( key, data[key] )
+    // a 1
+    // b 2
+    // c 3
+
+}
 
 */
 
