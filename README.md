@@ -17,7 +17,9 @@
 
 > dev
 - yarn add redux react-redux
-- yarn add redux-actions (비추)
+- yarn add redux-actions 
+
+> Ref
 - Sample Code : setting 
 - https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
 - Sample Code : Counter 
@@ -33,6 +35,8 @@
 - yarn add redux-logger 
 - yarn add redux-thunk // Asynchronous (비동기처리)
 - yarn add redux-pender // promise status manager 
+
+> Ref
 - https://velopert.com/3401
 
 # gatsbyjs+redux dev file structure
