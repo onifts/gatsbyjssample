@@ -39,6 +39,11 @@
 > Ref
 - https://velopert.com/3401
 
+# +FCM (Firebase Cloud Messaging)
+
+> dev 
+- yarn add firebase
+
 # gatsbyjs+redux dev file structure
 - /
   - src
