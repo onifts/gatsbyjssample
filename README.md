@@ -43,6 +43,8 @@
 
 > dev 
 - yarn add firebase
+
+> demo
 - https://frigatebirdfcm.netlify.com/
 
 # gatsbyjs+redux dev file structure
