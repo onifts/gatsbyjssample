@@ -56,7 +56,12 @@ typings/
 
 # gatsby files
 .cache/
-public
+
+# 이미 제외 된 파일은 reset이 필요함 
+#git rm --cached public\ -r 
+
+public/*
+!firebase-messaging-sw.js 
 
 # Mac files
 .DS_Store
