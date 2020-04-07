@@ -5,3 +5,19 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.onCreateWebpackConfig = ({ getConfig, actions, stage }) => {
+    
+    console.log('==============================================>', getConfig().mode, stage )
+
+    // If production JavaScript and CSS build
+    if (stage === 'build-javascript') {
+        
+        // Turn off source maps
+        actions.setWebpackConfig({
+            devtool: false,
+        })
+
+    }
+
+};
