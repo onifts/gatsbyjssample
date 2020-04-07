@@ -46,6 +46,9 @@
 - Package Bundler
 - Entry, Output, Loader, Plug-In
 
+> Dev
+- disable source map 
+
 > Ref 
 - https://kdydesign.github.io/2017/07/27/webpack/
 - https://kdydesign.github.io/2017/11/04/webpack-tutorial/
