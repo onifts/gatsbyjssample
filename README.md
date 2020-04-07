@@ -1,10 +1,10 @@
 # gatsbyjs sample code
 
-> dev 
+> Dev 
 - npm install -g gatsby-cli
 - gatsby new gatsbyjssample
 
-> user 
+> User 
 - yarn install 
 - yarn develop
 - http://localhost:8000/
@@ -15,7 +15,7 @@
 
 # +Redux
 
-> dev
+> Dev
 - yarn add redux react-redux
 - yarn add redux-actions 
 
@@ -31,7 +31,7 @@
 
 # +middleWare (미들웨어)(중간자)
 
-> dev
+> Dev
 - yarn add redux-logger 
 - yarn add redux-thunk // Asynchronous (비동기처리)
 - yarn add redux-pender // promise status manager 
@@ -39,12 +39,23 @@
 > Ref
 - https://velopert.com/3401
 
+# webpack 
+
+> Def
+- Build Tool (vs Jake, Brunch, Grunt, Gulp, Brocolli, Cha)
+- Package Bundler
+- Entry, Output, Loader, Plug-In
+
+> Ref 
+- https://kdydesign.github.io/2017/07/27/webpack/
+- https://kdydesign.github.io/2017/11/04/webpack-tutorial/
+
 # +FCM (Firebase Cloud Messaging)
 
-> dev 
+> Dev 
 - yarn add firebase
 
-> demo
+> Demo
 - https://frigatebirdfcm.netlify.com/
 
 # +Xamarin WebView +FCM
