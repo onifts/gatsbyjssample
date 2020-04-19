@@ -4,7 +4,9 @@
 - install nodejs at https://nodejs.org/ko/
 - npm install -g yarn 
 - npm install -g gatsby-cli
+- npm install -g supervisor
 - gatsby new gatsbyjssample
+- install vscode as https://code.visualstudio.com/
 
 > User 
 - yarn install 
