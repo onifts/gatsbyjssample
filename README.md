@@ -1,6 +1,8 @@
 # gatsbyjs sample code
 
 > Dev 
+- install nodejs at https://nodejs.org/ko/
+- npm install -g yarn 
 - npm install -g gatsby-cli
 - gatsby new gatsbyjssample
 
