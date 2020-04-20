@@ -28,10 +28,14 @@ class ClassSampleComponent extends React.Component {
             message : props.name,
 
         }
+
+        this.handleUpdate = this.handleUpdate.bind(this);
         
     } // end constructor
 
     handleUpdate(event) {
+
+        // console.log( 'handleUpdate', this.state )
 
         this.setState( { ...this.state, message : event.currentTarget.value } );
 

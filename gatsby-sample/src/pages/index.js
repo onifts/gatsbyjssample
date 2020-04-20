@@ -28,6 +28,7 @@ const IndexPage = () => (
     <Link to="/test5">Chat : Functional Component + Redux + Thunk + Pender + Axios</Link><br/>
 
     <Link to="/test6">Animated Ellipsis : Loading... </Link><br/>
+    <Link to="/test7">Animated Ellipsis : Loading... (Start and hold 8s)</Link><br/>
 
     <br/>
 
