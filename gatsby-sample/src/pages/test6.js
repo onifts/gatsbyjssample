@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Ellipsis from 'react-animated-ellipsis' ;
 
-import './test6.css';
+// component (other,custom)  
+import AnimatedEllipsisCommonComponent from '../components/common/AnimatedEllipsisCommonComponent';
 
 class test6 extends Component {
 
@@ -10,7 +11,7 @@ class test6 extends Component {
             
             <div>
                 <div>Loading<Ellipsis /></div>
-                <div class="loading">Loading</div>
+                <AnimatedEllipsisCommonComponent >Typing</AnimatedEllipsisCommonComponent>
             </div>
 
         );

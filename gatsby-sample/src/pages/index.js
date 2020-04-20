@@ -27,7 +27,7 @@ const IndexPage = () => (
     <Link to="/TestFuncAsync">Counter : Functional Component + Redux + Thunk</Link><br/>
     <Link to="/test5">Chat : Functional Component + Redux + Thunk + Pender + Axios</Link><br/>
 
-    <Link to="/test5">Animated Ellipsis : Loading... </Link><br/>
+    <Link to="/test6">Animated Ellipsis : Loading... </Link><br/>
 
     <br/>
 
