@@ -19,16 +19,17 @@ const IndexPage = () => (
     <br/>
     <br/>
 
-    <Link to="/test">Sample Component (input)</Link><br/>
-    <Link to="/test2">Pop (input)</Link><br/>
-    <Link to="/test3">Multi Language</Link><br/>
-    <Link to="/TestF">Counter : Class Component + Redux</Link><br/>
-    <Link to="/TestFunc">Counter : Functional Component + Redux</Link><br/>
-    <Link to="/TestFuncAsync">Counter : Functional Component + Redux + Thunk</Link><br/>
-    <Link to="/test5">Chat : Functional Component + Redux + Thunk + Pender + Axios</Link><br/>
+    <Link to="/test">[1] Sample Component (input)</Link><br/>
+    <Link to="/test2">[2] Pop (input)</Link><br/>
+    <Link to="/test3">[3] Multi Language</Link><br/>
+    <Link to="/TestF">[4] Counter : Class Component + Redux</Link><br/>
+    <Link to="/TestFunc">[5] Counter : Functional Component + Redux</Link><br/>
+    <Link to="/TestFuncAsync">[6] Counter : Functional Component + Redux + Thunk</Link><br/>
+    <Link to="/test5">[7] Chat : Functional Component + Redux + Thunk + Pender + Axios</Link><br/>
 
-    <Link to="/test6">Animated Ellipsis : Loading... </Link><br/>
-    <Link to="/test7">Animated Ellipsis : Loading... (Start and hold 8s)</Link><br/>
+    <Link to="/test6">[8] Animated Ellipsis : Loading... </Link><br/>
+    <Link to="/test7">[9] Animated Ellipsis : Loading... (Start and hold 8s)</Link><br/>
+    <Link to="/test8">[10] Emoji</Link><br/>
 
     <br/>
 

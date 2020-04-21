@@ -2,6 +2,8 @@
 
 // 10. get json array one field values list 
 
+/*
+
 var data = [
 
     {id: 1, name: 'A1'},
@@ -41,6 +43,8 @@ const temp = data.find((object,index) => {
 })
 
 console.log( temp,idex )
+
+//*/
 
 // 9. === vs == 
 
