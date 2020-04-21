@@ -25,18 +25,18 @@
 
 > Ref
 - Sample Code : setting 
-- https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
+  - https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
 - Sample Code : Counter 
-- https://github.com/onifts/reactjssample
+  - https://github.com/onifts/reactjssample
 - Sample Code : Counter - React+Redux 
-- https://github.com/onifts/reactjssample
+  - https://github.com/onifts/reactjssample
 - Sample Code : Chat - Thunk
-- https://velopert.com/3401
+  - https://velopert.com/3401
 - Emoji 
-- https://github.com/missive/emoji-mart
+  - https://github.com/missive/emoji-mart
 - GIF
-- giphy, https://giphy.com/
-- tenor, https://tenor.com/
+  - giphy, https://giphy.com/
+  - tenor, https://tenor.com/
 
 # +middleWare (미들웨어)(중간자)
 
