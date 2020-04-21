@@ -32,6 +32,8 @@
 - https://github.com/onifts/reactjssample
 - Sample Code : Chat - Thunk
 - https://velopert.com/3401
+- Emoji 
+- https://github.com/missive/emoji-mart
 
 # +middleWare (미들웨어)(중간자)
 
