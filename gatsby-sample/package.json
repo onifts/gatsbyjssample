@@ -26,6 +26,8 @@
     "react-dom": "^16.12.0",
     "react-dropzone": "^10.2.1",
     "react-emoji-render": "^1.2.2",
+    "react-gif-player": "^0.4.2",
+    "react-giphy-searchbox": "^1.1.0",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.3.3",
     "react-redux": "^7.2.0",
