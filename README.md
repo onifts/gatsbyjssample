@@ -71,6 +71,9 @@
 - https://frigatebirdfcm.netlify.com/
 
 # +Xamarin WebView +FCM
+- Android 
+  - https://www.youtube.com/watch?v=yIZzX3YNFiM&t=133s
+  - https://github.com/SPTutorial/NotificationSample
 
 > Ref
 - https://www.youtube.com/watch?v=yIZzX3YNFiM
