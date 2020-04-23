@@ -75,10 +75,6 @@
   - https://www.youtube.com/watch?v=yIZzX3YNFiM&t=133s
   - https://github.com/SPTutorial/NotificationSample
 
-> Ref
-- https://www.youtube.com/watch?v=yIZzX3YNFiM
-- https://github.com/SPTutorial/NotificationSample
-
 # gatsbyjs+redux dev file structure
 - /
   - src
