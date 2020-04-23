@@ -34,6 +34,7 @@
   - https://velopert.com/3401
 - Emoji 
   - https://github.com/missive/emoji-mart
+  - https://iconscout.com/blog/top-adorable-emoji-brands-app-web/
 - GIF
   - giphy, https://giphy.com/
   - tenor, https://tenor.com/
