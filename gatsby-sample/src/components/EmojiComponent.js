@@ -59,7 +59,7 @@ const EmojiComponent = () => {
 
         console.log('[2]',e.currentTarget.innerText)
 
-        setState( { ...state, name : e.currentTarget.innerText, loading : false } );
+        // setState( { ...state, name : e.currentTarget.innerText, loading : false } );
 
         handleSetMessage();
 
