@@ -33,11 +33,18 @@
 - Sample Code : Chat - Thunk
   - https://velopert.com/3401
 - Emoji 
+  - https://emojipedia.org/
   - https://github.com/missive/emoji-mart
+  - https://www.npmjs.com/package/react-emoji-render
+  - https://github.com/twitter/twemoji
   - https://iconscout.com/blog/top-adorable-emoji-brands-app-web/
 - GIF
   - giphy, https://giphy.com/
   - tenor, https://tenor.com/
+
+> Todo
+- Mail Server 
+  - PostFix 
 
 # +middleWare (미들웨어)(중간자)
 
