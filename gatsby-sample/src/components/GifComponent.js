@@ -45,8 +45,11 @@ export default class GifComponent extends Component {
                     searchPlaceholder="Search"
 
                     masonryConfig={[
-                        { columns: 2, imageWidth: 110, gutter: 1 },
-                        { mq: "1000px", columns: 5, imageWidth: 120, gutter: 1 }
+                        // { columns: 3, imageWidth: 110, gutter: 1 },
+                        // { mq: "1000px", columns: 5, imageWidth: 120, gutter: 1 }
+                        { columns: 2, imageWidth: 140, gutter: 10 },
+                        { mq: '700px', columns: 3, imageWidth: 200, gutter: 10 },
+                        { mq: '1000px', columns: 4, imageWidth: 220, gutter: 10 },
                     ]}
                 />
             </div>

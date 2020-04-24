@@ -10,6 +10,43 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 import EmojiRenderCommonComponent from './common/EmojiRenderCommonComponent';
 
+function insertHTMLAtCaret(html) {
+
+    var sel, range;
+    
+    if (window.getSelection) {
+        // IE9 and non-IE
+        sel = window.getSelection();
+        if (sel.getRangeAt && sel.rangeCount) {
+            range = sel.getRangeAt(0);
+            range.deleteContents();
+
+            // Range.createContextualFragment() would be useful here but is
+            // non-standard and not supported in all browsers (IE9, for one)
+            var el = document.createElement("div");
+            el.innerHTML = html;
+            var frag = document.createDocumentFragment(), node, lastNode;
+            while ( (node = el.firstChild) ) {
+                lastNode = frag.appendChild(node);
+            }
+            range.insertNode(frag);
+            
+            // Preserve the selection
+            if (lastNode) {
+                range = range.cloneRange();
+                range.setStartAfter(lastNode);
+                range.collapse(true);
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+        }
+    } else if (document.selection && document.selection.type != "Control") {
+        // IE < 9
+        document.selection.createRange().pasteHTML(html);
+    }
+    
+} // end insertHTMLAtCaret
+
 const EmojiComponent = () => {
     
     const [state, setState] = useState({ name:'', loading:false });
@@ -20,28 +57,17 @@ const EmojiComponent = () => {
         
         e.preventDefault();
 
-        setState( { ...state, name : e.target.value, loading : false } );
+        console.log('[2]',e.currentTarget.innerText)
 
-        console.log('onChangeInput',state,e.target.value)
+        setState( { ...state, name : e.currentTarget.innerText, loading : false } );
+
+        handleSetMessage();
 
     }; // end onChangeInput
 
     const onOpenEmoji = e => {
-          
-        if ( state.loading ) {
-            setState( { ...state, loading : false } );
-        }
-        else {
-            setState( { ...state, loading : true } );
-        }
-        
-        console.log('onOpenEmoji',state)
 
-    }; // end onChangeInput
-
-    const onCloseEmoji = e => {
-          
-        setState( { ...state, loading : false } );
+        setState( { ...state, loading : !state.loading } );
 
     }; // end onChangeInput
 
@@ -54,42 +80,68 @@ const EmojiComponent = () => {
         sym.forEach(el => codesArray.push('0x' + el))
         let emoji = String.fromCodePoint(...codesArray)//'<span role="img" >'+String.fromCodePoint(...codesArray)+'</span>'
         
-        console.log( emoji, sym, codesArray )
+        // console.log( emoji, sym, codesArray )
 
-        //setState({
-        //    text: state.text + emoji
-        //});
+        var emoji__ = `<img alt="`+emoji+`" src="https://twemoji.maxcdn.com/v/12.1.5/72x72/`+sym+`.png" 
+            style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;" />`
+        
+        insertHTMLAtCaret(emoji__)
 
-        setState( { ...state, name : state.name + emoji } );
-
-        // console.log('addEmoji',state)
+        handleSetMessage();
 
     };
+
+    const handleSetMessage = () => {
+        
+        const message = document.getElementById("message").childNodes;
+
+        var message__ = ""
+
+        for(var i = 0; i < message.length; i++) {
+
+            if( message[i].tagName == 'IMG' ) {
+                message__ += message[i].getAttribute("alt");
+            }
+            else {
+                message__ += message[i].nodeValue;
+            }
+        
+        } // end for 
+
+        // console.log(message__)
+
+        setState( { ...state, name : message__ } );
+
+    } // end handleSetMessage
 
     return (
         <>
 
-            
             <div>
-                <div>[1] : {name}</div>
-                <div>[2] : <EmojiRenderCommonComponent>{name}</EmojiRenderCommonComponent></div>
-                <input name="name" value={name} onChange={onChangeInput} onFocus={onCloseEmoji}/>
+                {String.fromCodePoint(0x1F97A)}
+                https://emojipedia.org/
+            </div>
+            <div>[1] : {name}</div>
+            <div>[2] : {<EmojiRenderCommonComponent>{name}</EmojiRenderCommonComponent>}</div>
+            <div>
+                <div id="message" name="message" contentEditable onInput={onChangeInput} style={{border:'1px dashed'}} ></div>
+                <textarea value={name} readOnly></textarea>
             </div>
 
             <IconButton color="primary" aria-label="upload picture" component="span" onClick={onOpenEmoji}>
                 <InsertEmoticonIcon />
             </IconButton>
 
-            {state.loading && 
-            <div><Picker onSelect={addEmoji} /></div>
+            {loading && 
+            <div><Picker onSelect={addEmoji} set='twitter' /></div>
             }
 
-            <div>
+            {/* <div>
                 <Picker onSelect={addEmoji} title='' emoji='' 
                     style={{ position: 'absolute', bottom: '20px', right: '20px', width:'90%' }} 
                     emojiTooltip={false} set='twitter' 
                 />
-            </div>
+            </div> */}
 
         </>
     );
