@@ -34,6 +34,7 @@
   - https://velopert.com/3401
 - Emoji 
   - https://github.com/missive/emoji-mart
+  - https://iconscout.com/blog/top-adorable-emoji-brands-app-web/
 - GIF
   - giphy, https://giphy.com/
   - tenor, https://tenor.com/
@@ -71,10 +72,9 @@
 - https://frigatebirdfcm.netlify.com/
 
 # +Xamarin WebView +FCM
-
-> Ref
-- https://www.youtube.com/watch?v=yIZzX3YNFiM
-- https://github.com/SPTutorial/NotificationSample
+- Android 
+  - https://www.youtube.com/watch?v=yIZzX3YNFiM&t=133s
+  - https://github.com/SPTutorial/NotificationSample
 
 # gatsbyjs+redux dev file structure
 - /
