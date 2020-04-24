@@ -42,6 +42,10 @@
   - giphy, https://giphy.com/
   - tenor, https://tenor.com/
 
+> Todo
+- Mail Server 
+  - PostFix 
+
 # +middleWare (미들웨어)(중간자)
 
 > Dev
