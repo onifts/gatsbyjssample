@@ -31,6 +31,11 @@ const IndexPage = () => (
     <Link to="/test7">[9] Animated Ellipsis : Loading... (Start and hold 8s)</Link><br/>
     <Link to="/test8">[10] Emoji</Link><br/>
     <Link to="/test9">[11] GIF</Link><br/>
+    <Link to="/test10">[12] Tab</Link><br/>
+
+    <Link to="/test11">[13] image cache : react-image</Link><br/>
+    <Link to="/test12">[14] image cache : react-precache-img</Link><br/>
+    <Link to="/test13">[15] page cache : react-keeper (+scroll position keep)</Link><br/>
 
     <br/>
 
