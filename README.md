@@ -86,6 +86,8 @@
   - https://www.youtube.com/watch?v=yIZzX3YNFiM&t=133s
   - https://github.com/SPTutorial/NotificationSample
 
+# +Voice/Video Talk
+
 # gatsbyjs+redux dev file structure
 - /
   - src
