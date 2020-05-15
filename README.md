@@ -81,6 +81,11 @@
 > Demo
 - https://frigatebirdfcm.netlify.com/
 
+> Ref
+- https://firebase.google.com/docs/cloud-messaging/js/send-multiple
+- https://firebase.google.com/docs/cloud-messaging/js/client?hl=ko
+- https://www.youtube.com/watch?v=BsCBCudx58g&feature=emb_logo
+
 # +Xamarin WebView +FCM
 - Android 
   - https://www.youtube.com/watch?v=yIZzX3YNFiM&t=133s
