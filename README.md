@@ -84,6 +84,7 @@
 > Ref
 - https://hexadix.com/push-notification-web-browser/
 - https://stackoverflow.com/questions/40411059/create-firebase-notification-with-page-in-foreground-focus
+- https://developer.mozilla.org/ko/docs/Web/API/ServiceWorkerGlobalScope/notificationclick_event
 - https://firebase.google.com/docs/cloud-messaging/js/send-multiple
 - https://firebase.google.com/docs/cloud-messaging/js/client?hl=ko
 - https://www.youtube.com/watch?v=BsCBCudx58g&feature=emb_logo
